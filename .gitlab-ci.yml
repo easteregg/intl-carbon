@@ -1,0 +1,11 @@
+phpunit:php7.0:
+  before_script:
+    - apt-get update -yqq
+    - apt-get install git -yqq
+    - apt-get install -yqq zlib1g-dev --no-install-recommends
+    - docker-php-ext-install zip
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar install
+  image: php:7.0
+  script:
+    - php vendor/bin/phpunit --colors

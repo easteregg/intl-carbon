@@ -1,0 +1,28 @@
+{
+    "name": "easteregg/package-template",
+    "license": "proprietary",
+    "description": "Laravel 5 Package Template",
+    "authors": [
+        {
+            "name": "Mohammadreza Ghorbani",
+            "email": "isthereanybody@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Easteregg\\Package\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "laravel/framework": "~5.2",
+        "orchestra/testbench": "~3.2",
+        "phpunit/phpunit": "*",
+        "mockery/mockery": "*"
+    }
+}
