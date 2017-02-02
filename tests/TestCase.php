@@ -46,7 +46,7 @@ abstract class TestCase extends TestBenchCase
     {
         $this->artisan('migrate', [
             '--database' => 'testing',
-            '--realpath' => realpath(__DIR__ . '/Migrations'),
+//            '--realpath' => realpath(__DIR__ . '/migrations'),
         ]);
 
         $this->artisan('vendor:publish');
@@ -60,7 +60,7 @@ abstract class TestCase extends TestBenchCase
     {
         return [
             // List Package Providers Here
-            PackageServiceProvider::class
+//            PackageServiceProvider::class
         ];
     }
 }

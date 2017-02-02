@@ -18,7 +18,9 @@
             "Tests\\": "tests"
         }
     },
-    "require": {},
+    "require": {
+        "nesbot/carbon": "^1.22"
+    },
     "require-dev": {
         "laravel/framework": "~5.2",
         "orchestra/testbench": "~3.2",
