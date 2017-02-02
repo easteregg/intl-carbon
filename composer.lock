@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f5f752cd4dcc96db98477e288ebf0c0",
+    "content-hash": "a59889ab0aaa00ef9715ce101fc3de89",
     "packages": [
         {
             "name": "nesbot/carbon",
@@ -442,16 +442,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.4.6",
+            "version": "v5.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5913b960656d7f978605ff9c1513ffbfd190c173"
+                "reference": "3e226e3481aabe835626739a1507c8af17b76082"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5913b960656d7f978605ff9c1513ffbfd190c173",
-                "reference": "5913b960656d7f978605ff9c1513ffbfd190c173",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3e226e3481aabe835626739a1507c8af17b76082",
+                "reference": "3e226e3481aabe835626739a1507c8af17b76082",
                 "shasum": ""
             },
             "require": {
@@ -567,20 +567,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-01-27T19:27:15+00:00"
+            "time": "2017-02-01T14:45:01+00:00"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.33",
+            "version": "1.0.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "5c7f98498b12d47f9de90ec9186a90000125777c"
+                "reference": "469ad53c13ea19a0e54e3e5d70f61227ddcc0299"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/5c7f98498b12d47f9de90ec9186a90000125777c",
-                "reference": "5c7f98498b12d47f9de90ec9186a90000125777c",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/469ad53c13ea19a0e54e3e5d70f61227ddcc0299",
+                "reference": "469ad53c13ea19a0e54e3e5d70f61227ddcc0299",
                 "shasum": ""
             },
             "require": {
@@ -650,7 +650,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2017-01-23T10:32:09+00:00"
+            "time": "2017-01-30T17:41:17+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -883,16 +883,16 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v3.4.2",
+            "version": "v3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "34eb7fd834cc28c29568df9fc8cc8f0f8e3a05d0"
+                "reference": "dbb5dcad060a7a1b3830ef6f30844b529b5f3f2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/34eb7fd834cc28c29568df9fc8cc8f0f8e3a05d0",
-                "reference": "34eb7fd834cc28c29568df9fc8cc8f0f8e3a05d0",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/dbb5dcad060a7a1b3830ef6f30844b529b5f3f2a",
+                "reference": "dbb5dcad060a7a1b3830ef6f30844b529b5f3f2a",
                 "shasum": ""
             },
             "require": {
@@ -945,7 +945,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2017-01-27T14:58:24+00:00"
+            "time": "2017-02-02T10:03:31+00:00"
         },
         {
             "name": "paragonie/random_compat",

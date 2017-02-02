@@ -1,5 +1,5 @@
 {
-    "name": "easteregg/package-template",
+    "name": "easteregg/intl-carbon",
     "license": "proprietary",
     "description": "Laravel 5 Package Template",
     "authors": [
@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Easteregg\\Package\\": "src"
+            "Easteregg\\IntlCarbon\\": "src"
         }
     },
     "autoload-dev": {
@@ -22,8 +22,8 @@
         "nesbot/carbon": "^1.22"
     },
     "require-dev": {
-        "laravel/framework": "~5.2",
-        "orchestra/testbench": "~3.2",
+        "laravel/framework": "5.4.*",
+        "orchestra/testbench": "*",
         "phpunit/phpunit": "*",
         "mockery/mockery": "*"
     }
