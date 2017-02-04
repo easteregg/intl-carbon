@@ -17,6 +17,8 @@ to any calendar you want. it looks for the current application locale to generat
  
  see: (https://secure.php.net/manual/en/class.intldateformatter.php)
 
+
+ For more information about the formatting, checkout [this](http://userguide.icu-project.org/formatparse/datetime) page.
  Edit your eloquent model and add `Easteregg\IntlCarbon\LocalizesDates` trait.
  
  example: 
