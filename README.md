@@ -1,7 +1,7 @@
 # Laravel 5.4 Eloquent Carbon Methods
 
 This package provides a convenient way to localize and format Eloquent date attributes. using this package, you can localize date attributes of any model 
-to any calendar you want. 
+to any calendar you want. it looks for the current application locale to generate string.
 
 
 ## Installation
@@ -17,7 +17,7 @@ to any calendar you want.
  
  see: (https://secure.php.net/manual/en/class.intldateformatter.php)
 
- Edit your eloquent model and add use `Easteregg\IntlCarbon\LocalizesDates`
+ Edit your eloquent model and add `Easteregg\IntlCarbon\LocalizesDates` trait.
  
  example: 
  
@@ -33,5 +33,8 @@ class Post extends Model
 
 
 ```
+
+You should be good to go. now anywhere in the system, you can call any model date value with a new long() method to format. 
+(e.g. `$post->created_at->long()).
  Pull requests are welcome for this repository.
 ##
