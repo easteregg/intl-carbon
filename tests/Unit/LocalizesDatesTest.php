@@ -2,6 +2,8 @@
 
 namespace Tests\Unit;
 
+use Carbon\Carbon;
+use IntlDateFormatter;
 use Tests\Stubs\Post;
 use Tests\TestCase;
 
@@ -10,10 +12,9 @@ class LocalizesDatesTest extends TestCase
     /**
      * @test
      */
-    public function it_provides_long_formatting()
+    public function it_should_provide_a_long_format_based_on_app_locale()
     {
         $post = factory(Post::class)->create();
-
-        $this->assertTrue(method_exists('longDate', $post));
+        $post->created_at = Carbon::createFromFormat("Y-m-d H", "2017-01-01 0");
     }
 }

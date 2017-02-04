@@ -1,26 +1,37 @@
-# Laravel 5 Template Package
+# Laravel 5.4 Eloquent Carbon Methods
 
-## Introduction
+This package provides a convenient way to localize and format Eloquent date attributes. using this package, you can localize date attributes of any model 
+to any calendar you want. 
 
-This package provides with the somehow semi-conventional structure that is going to work for your needs. 
-Out of the box, phpunit is configured, service provider and routing is also is done. 
+
+## Installation
+
+1. run `composer require easteregg/intl-carbon`
  
-Publishing assets and views are defined in `PackageServiceProvider::class` , so you can quickly jump on the code and start creating the application.
+2. run `php artisan vendor:publish --tag="intl-carbon.config"` to publish the config files. (optional)
+
+
+## Usage
  
-
-## Getting Started
-
-1. make a clone of the package using `git clone git@gitlab.com:easteregg/package-template.git`
-2. Update package name and other details in `composer.json` file.
-3. Change the name of the `PackageServiceProvider` to your needs.
-4. Change the namespace of the package, defined in `PackageServiceProvider`, to publish views, db and assets, this namespace also used in loading views and translations.
-
-
-## Write Your first test
-
-This package uses `orchestra/testbench`, an awesome package for testing laravel applications, for more convenience, basic operations is already setup. you only need to update method `\Tests\TestCase@getPackageProviders()` and replace `PackageServiceProvider` with renamed service provider. 
- for testing, remember to extend from `\Tests\TestCase` base class, not the original laravel one. 
+ Edit the config file and select a calendar for each locale your application might be having
  
-## More features are coming...
+ see: (https://secure.php.net/manual/en/class.intldateformatter.php)
 
-1. Gitlab Continuous integration is supported for phpunit projects out of the box.
+ Edit your eloquent model and add use `Easteregg\IntlCarbon\LocalizesDates`
+ 
+ example: 
+ 
+ ```$xslt
+<?php
+
+use Easteregg\IntlCarbon\LocalizesDates;
+
+class Post extends Model
+{
+    use LocalizesDates;
+}
+
+
+```
+ Pull requests are welcome for this repository.
+##

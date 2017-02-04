@@ -5,7 +5,7 @@ namespace Tests;
 use Easteregg\Package\PackageServiceProvider;
 use Faker\Factory;
 use Orchestra\Testbench\TestCase as TestBenchCase;
-use Tests\Stubs\PackageServiceProvider as DatabaseTestProvider;
+use Tests\Stubs\DatabaseServiceProvider;
 
 abstract class TestCase extends TestBenchCase
 {
@@ -42,7 +42,7 @@ abstract class TestCase extends TestBenchCase
     protected function getPackageProviders($app)
     {
         return [
-            DatabaseTestProvider::class
+            DatabaseServiceProvider::class
         ];
     }
 }
