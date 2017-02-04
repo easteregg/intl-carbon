@@ -9,8 +9,8 @@ to any calendar you want. it looks for the current application locale to generat
 ## Installation
 
 1. run `composer require easteregg/intl-carbon`
- 
-2. run `php artisan vendor:publish --tag="intl-carbon.config"` to publish the config files. (optional)
+2. add `Easteregg\IntlCarbon\IntlServiceProvider` to `config/app.php` providers.
+3. run `php artisan vendor:publish --tag="intl-carbon.config"` to publish the config files. (optional)
 
 
 ## Usage
