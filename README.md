@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/easteregg/intl-carbon.svg?branch=master)](https://travis-ci.org/easteregg/intl-carbon)
+
 # Laravel 5.4 Eloquent Carbon Methods
 
 This package provides a convenient way to localize and format Eloquent date attributes. using this package, you can localize date attributes of any model 
