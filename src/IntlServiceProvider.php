@@ -13,6 +13,4 @@ class IntlServiceProvider extends ServiceProvider
             __DIR__ . '/Config/intl.php' => config_path("intl.php"),
         ], 'intl-carbon.config');
     }
-
-
 }

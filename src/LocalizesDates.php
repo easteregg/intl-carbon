@@ -1,6 +1,10 @@
 <?php
 namespace Easteregg\IntlCarbon;
 
+use Carbon\Carbon;
+use DateTimeInterface;
+use MongoDB\BSON\UTCDateTime;
+
 trait LocalizesDates
 {
 
@@ -25,11 +29,16 @@ trait LocalizesDates
             return $value;
         }
 
+        // If the value is a MongoDB\BSON\UTCDateTime, then we convert it first to DateTime Value
+        if ($value instanceof UTCDateTime) {
+            $value = $value->toDateTime();
+        }
+
         // If the value is already a DateTime instance, we will just skip the rest of
         // these checks since they will be a waste of time, and hinder performance
         // when checking the field. We will just return the DateTime right away.
         if ($value instanceof DateTimeInterface) {
-            return new Carbon(
+            return new LocalizesCarbon(
                 $value->format('Y-m-d H:i:s.u'), $value->getTimezone()
             );
         }
