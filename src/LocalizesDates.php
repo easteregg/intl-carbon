@@ -39,7 +39,7 @@ trait LocalizesDates
         // when checking the field. We will just return the DateTime right away.
         if ($value instanceof DateTimeInterface) {
             return new LocalizesCarbon(
-                $value->format('Y-m-d H:i:s.u'), $value->getTimezone()
+                $value->format($this->getDateFormat()), $value->getTimezone()
             );
         }
 
