@@ -4,8 +4,6 @@ namespace Tests\Unit;
 
 use Carbon\Carbon;
 use Easteregg\IntlCarbon\LocalizesCarbon;
-use Faker\Provider\cs_CZ\DateTime;
-use IntlDateFormatter;
 use Tests\Stubs\Post;
 use Tests\TestCase;
 

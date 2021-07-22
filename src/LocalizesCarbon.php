@@ -3,7 +3,6 @@
 namespace Easteregg\IntlCarbon;
 
 use Carbon\Carbon;
-use IntlDateFormatter;
 
 class LocalizesCarbon extends Carbon
 {
@@ -29,11 +28,11 @@ class LocalizesCarbon extends Carbon
     {
         $timezone = "Asia/Tehran";
         $locale = $this->getLocaleFromConfig();
-        $calendar = IntlDateFormatter::TRADITIONAL;
-        $formatter = new IntlDateFormatter(
+        $calendar = \IntlDateFormatter::TRADITIONAL;
+        $formatter = new \IntlDateFormatter(
             $locale,
-            IntlDateFormatter::LONG,
-            IntlDateFormatter::LONG,
+            \IntlDateFormatter::LONG,
+            \IntlDateFormatter::LONG,
             $timezone,
             $calendar
         );

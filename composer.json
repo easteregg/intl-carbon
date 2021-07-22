@@ -8,6 +8,9 @@
             "email": "isthereanybody@gmail.com"
         }
     ],
+    "scripts": {
+        "test": "phpunit"
+    },
     "autoload": {
         "psr-4": {
             "Easteregg\\IntlCarbon\\": "src"
@@ -19,12 +22,14 @@
         }
     },
     "require": {
-        "nesbot/carbon": "^1.22"
+        "nesbot/carbon": "^2.0",
+        "ext-intl": "*"
     },
     "require-dev": {
-        "laravel/framework": "5.4.*",
+        "laravel/framework": "6.*|7.*|8.*",
         "orchestra/testbench": "*",
         "phpunit/phpunit": "*",
-        "mockery/mockery": "*"
+        "mockery/mockery": "*",
+        "laravel/legacy-factories": "^1.1"
     }
 }

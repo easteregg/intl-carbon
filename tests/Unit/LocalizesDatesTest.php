@@ -16,5 +16,9 @@ class LocalizesDatesTest extends TestCase
     {
         $post = factory(Post::class)->create();
         $post->created_at = Carbon::createFromFormat("Y-m-d H", "2017-01-01 0");
+
+        $this->assertEquals($post->created_at->long(), "January 1, 2017 at 03:30:00 Iran Time");
+        config()->set('app.locale', 'fa');
+        $this->assertEquals($post->created_at->long(), "یکشنبه, ۱۲ دی ۱۳۹۵ ۰۳:۳۰:۰۰ به وقت ایران");
     }
 }
